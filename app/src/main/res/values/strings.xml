@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">TV Show Case</string>
+
+
+    <string name="label_year">Year: %s</string>
+    <string name="label_imdb_rating">Imdb: %s</string>
+    <string name="label_episode">Episode: %s</string>
+    <string name="label_season">Season: %s</string>
+    <string name="label_name">Tv Show Case</string>
+    <string name="label_season_title">Season</string>
+    <string name="label_episode_title">Episode</string>
+
+
+
+    <string name="tools_episode_number">Episode 2</string>
+    <string name="tools_season_number">season 1</string>
+    <string name="tools_episode_name">The Voyeurs</string>
+    <string name="tools_released">06 Apr 2014</string>
+    <string name="tools_duration">30 min</string>
+    <string name="tools_decimal_number">1</string>
+    <string name="tools_float_number">7.8</string>
+</resources>

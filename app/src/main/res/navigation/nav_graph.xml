@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/EpisodeListFragment">
+
+    <fragment
+        android:id="@+id/EpisodeListFragment"
+        android:name="com.example.tvshowcase.episode_list.EpisodeListFragment"
+        tools:layout="@layout/fragment_episode_list">
+        <action
+            android:id="@+id/action_EpisodeListFragment_to_EpisodeDetailFragment"
+            app:destination="@id/EpisodeDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/EpisodeDetailFragment"
+        android:name="com.example.tvshowcase.episode_detail.EpisodeDetailFragment"
+        tools:layout="@layout/fragment_episode_detail">
+
+        <argument
+            android:name="episode"
+            app:argType="com.example.domain.model.Episode" />
+    </fragment>
+</navigation>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/margin_4x"
+    android:background="@color/white"
+    android:paddingBottom="@dimen/padding_4x">
+
+    <ImageView
+        android:id="@+id/iv_episodeCover_episodeItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="@dimen/size_12x"
+        android:background="@drawable/background_gradiant"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_episodeCover_episodeItem"
+        app:layout_constraintEnd_toEndOf="@+id/iv_episodeCover_episodeItem"
+        app:layout_constraintStart_toStartOf="@+id/iv_episodeCover_episodeItem" />
+
+    <TextView
+        android:id="@+id/tv_name_episodeItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_2x"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_episodeCover_episodeItem"
+        tools:text="@string/tools_episode_name" />
+
+    <TextView
+        android:id="@+id/tv_episodeNumber_episodeItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_2x"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name_episodeItem"
+        tools:text="@string/tools_episode_number" />
+
+
+    <TextView
+        android:id="@+id/tv_seasonNumber_episodeItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_4x"
+        app:layout_constraintStart_toEndOf="@+id/tv_episodeNumber_episodeItem"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name_episodeItem"
+        tools:text="@string/tools_season_number" />
+
+    <TextView
+        android:id="@+id/tv_imdbRating_episodeItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_2x"
+        android:layout_marginTop="@dimen/margin_2x"
+        app:drawableStartCompat="@drawable/ic_star"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_episodeNumber_episodeItem" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
